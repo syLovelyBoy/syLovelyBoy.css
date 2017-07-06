@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>呼我出行</title>
+		<style>
+			html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline;}
+			body{font-size: 14px;font-family: "微软雅黑" arial;color: #333;}
+			html,body{height: 100%;background: #fff;}
+			.but{width: 100%;height:40px;border:none;background:#51c2fc;color: #fff;border-radius: 4px;text-align: left;}
+			.but:focus{outline: none;}
+			.msg{width: 90%;height: 40px; border:1px solid #a1a1a1;border-radius: 4px;margin-left: 5%;box-sizing: border-box;overflow: hidden;margin-top: 30px;}
+			.msg p{border-bottom: 1px solid #a1a1a1;text-indent:1em;margin-top: 5px;font-size: 12px;padding-bottom: 5px;}
+			.dh{transition:all 1s;
+				-moz-transition:all 1s; /* Firefox 4 */
+				-webkit-transition:all 1s; /* Safari and Chrome */
+			}
+			.dh2{transition:all 0.5s;
+				-moz-transition:all 0.5s; /* Firefox 4 */
+				-webkit-transition:all 0.5s; /* Safari and Chrome */
+			}
+			.sq_but{width: 120px;height: 35px;margin: 10px auto;border: none;background:#1cb199;border-radius: 4px;color: #fff;}
+			.sq_but:focus{outline: none;}
+			.but_top{position: relative;color: #fff;}
+			.but_top span{display: block;font-size: 12px; position: absolute;height:40px;line-height: 40px;text-align: center; width: 80px;right: 0px;top: 0px;}
+			#dis_li{display: none;}
+		</style>
+	</head>
+	<body>
+		<div style="padding-top: 20px;">
+			<div class="msg dh" style="margin-top: 0px;">
+				<div class="but_top"><button class="but but_top">普通驾驶员</button><span onclick="aa()">申请条件 >></span></div>
+				<p>取得相应准驾车型机动车驾驶证并具有3年以上驾驶经历</p>
+				<p>无交通肇事犯罪、危险驾驶犯罪记录，无吸毒记录，无饮酒后驾驶记录</p>
+				<p>最近连续3个记分周期内没有记满12分记录</p>
+				<p>无暴力犯罪记录</p>
+				<p>身体健康</p>
+				<p>男性年龄不超过60周岁，女性年龄不超过55周岁</p>
+				<p>申领之日，无被吊销道路运输驾驶员从业资格证未满5年的</p>
+				<p style="border: none;">无被禁止终身驾驶营运车辆的</p>
+			</div>
+			
+			<div class="msg dh2">
+				<div class="but_top"><button class="but">巡游出租从业资格驾驶员</button><span onclick="bb()">申请条件 >></span></div>
+				<p>需满足普通驾驶员的所有申请条件</p>
+				<p>在最近3年内连续从事运营服务，诚信考核等级均达到AAA级</p>
+			</div>
+		</div>
+		
+		<script>
+			var dh=document.getElementsByClassName("dh");
+			var dh2=document.getElementsByClassName("dh2");
+			var num1=0;
+			var num2=0
+			function aa(){
+				if(num1==0){
+
+					dh[0].style.height="310px";
+					num1=1
+				}else if(num1==1){
+
+					dh[0].style.height="40px";
+					num1=0
+				}
+				return num1
+			}
+			function bb(){
+				if(num2==0){
+					dh2[0].style.height="200px";
+					num2=1
+				}else if(num2==1){
+			
+					dh2[0].style.height="40px";
+					num2=0
+				}
+				return num2
+			}
+		</script>
+
+	</body>
+</html>

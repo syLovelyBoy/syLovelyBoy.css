@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>调查问卷</title>
+		<style>
+			*{margin: 0;padding: 0;}
+			.cont{padding: 15px;box-sizing: border-box;}
+			body{font-family: "微软雅黑";}
+			
+			@media (max-width:375px){
+			    body{
+			       font-size: 14px;
+			    }
+			    #why1,#why2,#why3,#why4,#w1,#w2,#w3,#w4,#check1,#check2,#check3,#check4{width: 16px;height: 16px;}
+			    .Q1,.Q2,.Q3,.Q5,.Q6,.Q7,.Q8,.Q9,.Q10{width: 16px;height: 16px;}
+			}
+			@media (max-width:320px){
+			    body{
+			    	font-size: 12px;
+			    }
+			    .cont{
+			    	padding: 10px;
+			    }
+			    #why1,#why2,#why3,#why4,#w1,#w2,#w3,#w4,#check1,#check2,#check3,#check4{width: 14px;height: 14px;}
+			    .Q1,.Q2,.Q3,.Q5,.Q6,.Q7,.Q8,.Q9,.Q10{width: 14px;height: 14px;}
+			}
+			#w1,#w2,#w3,#w4,#check1,#check2,#check3,#check4{vertical-align: middle;margin-top: -2px;}
+			.span_rad{display: inline-block;width: 33%;text-align: center;}
+			.Q1,.Q2,.Q3,.Q5,.Q6,.Q7,.Q8,.Q9,.Q10{vertical-align: middle;margin-top: -3px;}
+			.clear:after{display:block;clear:both;content:"";visibility:hidden;height:0px;} 
+			.clear{zoom:1;}
+			.content_table{width: 100%;height: 50px;border: 1px solid #a1a1a1;overflow:auto;padding: 5px;box-sizing: border-box;}
+			#why1,#why2,#why3,#why4{vertical-align: middle;}
+			.m_t5{margin-top:10px;}
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			
+			<p style="font-size: 16px;text-align: center;">重庆大博售后维修站客户调查问卷</p>
+			<p class="m_t5">调查人：某某某</p>
+			<p>调查范围：到站维修北汽威旺及银翔幻速所有车辆。</p>
+			<p class="m_t5">一、基本资料</p>
+			<p>维修站名称：重庆大博汽车销售有限公司售后维修站</p>
+			<p>问卷日期：</p>
+			<p>问卷时间：</p>
+			<p>客户姓名：</p>
+			<p>客户电话：</p>
+			<p>经销商名称：</p>
+			<p class="m_t5">二、车辆基本情况</p>
+			<p>用户类型：
+			</p>
+			<p>
+				<span><input type="checkbox" name="checkbox" id="check1"><label for="check1">首保车辆 </label> &nbsp;</span>
+				<span><input type="checkbox" name="checkbox" id="check2"><label for="check2">索赔车辆 </label> &nbsp;</span>
+				<span><input type="checkbox" name="checkbox" id="check3"><label for="check3">一般维修车 </label> &nbsp;</span>
+				<span><input type="checkbox" name="checkbox" id="check4"><label for="check4">事故车辆 </label></span>
+			</p>
+			<p>车辆型号：</p>
+			<p>购车日期：1999年8月3日<span> &nbsp;行驶里程：963公里</span></p>
+			<p class="m_t5">三、问卷调查</p>
+			<p>Q1:请问您的对自己购买的车辆性能方面是否满意？</p>
+			<p><span class="span_rad"><input type="radio" name="Q1" class="Q1"> 非常满意 </span><span class="span_rad"><input type="radio" name="Q1" class="Q1"> 满意 </span><span class="span_rad"><input type="radio" name="Q1" class="Q1"> 不满意 </span></p>
+			<p>对车辆性能方面的意见或者建议：</p>
+			<div contenteditable="true" class="content_table"></div>
+			
+			<p class="m_t5">Q2：请问您对我公司维修站服务顾问接待是否满意？</p>
+			<p><span class="span_rad"><input type="radio" name="Q2" class="Q2"> 非常满意 </span><span class="span_rad"><input type="radio" name="Q2" class="Q2"> 满意 </span><span class="span_rad"><input type="radio" name="Q2" class="Q2"> 不满意 </span></p>
+			<div>
+				<p>建议或者意见：</p>
+				<div contenteditable="true" class="content_table"></div>
+			</div>
+			<p class="m_t5">Q3：请问您对我公司维修技师维修质量是否满意？</p>
+			<p><span class="span_rad"><input type="radio" name="Q3" class="Q3"> 非常满意 </span><span class="span_rad"><input type="radio" name="Q3" class="Q3"> 满意 </span><span class="span_rad"><input type="radio" name="Q3" class="Q3"> 不满意 </span></p>
+			<div>
+				<p>建议或者意见：</p>
+				<div contenteditable="true" class="content_table"></div>
+			</div>
+			<div class="m_t5">
+				<p>Q4：请问您为什么选择我们维修站？</p>
+				<p><input type="checkbox" name="checkbox" id="why1"> <label for="why1">4S店维修有保障</label> </p>
+				<p><input type="checkbox" name="checkbox" id="why2"> <label for="why2">质保期内到店维修能享受质保</label> </p>
+				<p><input type="checkbox" name="checkbox" id="why3"> <label for="why3">技术专业能解决问题</label> </p>
+				<p><input type="checkbox" name="checkbox" id="why4"> <label for="why4">服务态度好环境不错</label> </p>
+			</div>
+			<p class="m_t5">Q5：请问您是否愿意一直在我公司维修站做维修保养？</p>
+			<p> <span><input type="radio" name="Q5" class="Q5"> 是 </span>
+				<span><input type="radio" name="Q5" class="Q5"> 否 </span>
+			</p>
+			<p class="m_t5">Q6：请问您到维修站修理车辆对是否有配件进行维修是否满意？</p>
+			<p> <span><input type="radio" name="Q6" class="Q6"> 是 </span>
+				<span><input type="radio" name="Q6" class="Q6"> 否 </span>
+			</p>
+			<p class="m_t5">Q7：请问您对维修站维修费用方面是否合理？</p>
+			<p> <span><input type="radio" name="Q7" class="Q7"> 是 </span>
+				<span><input type="radio" name="Q7" class="Q7"> 否 </span>
+			</p>
+			<p class="m_t5">Q8：请问您对我们客户休息区设施是否满意？</p>
+			<p> <span><input type="radio" name="Q8" class="Q8"> 是 </span>
+				<span><input type="radio" name="Q8" class="Q8"> 否 </span>
+			</p>
+			<p class="m_t5">Q9：的维修用时是否满意？</p>
+			<p> <span><input type="radio" name="Q9" class="Q9"> 是 </span>
+				<span><input type="radio" name="Q9" class="Q9"> 否 </span>
+			</p>
+			<p class="m_t5">Q10：请问您对我们维修站上门保养服务项目是否认可？</p>
+			<p> <span><input type="radio" name="Q10" class="Q10"> 是 </span>
+				<span><input type="radio" name="Q10" class="Q10"> 否 </span>
+			</p>
+			<div class="m_t5">
+				<p>Q11：注重以下那几个方面？(多选)</p>
+				<p><input type="checkbox" name="checkbox" id="w1"> <label for="w1">机油 </label>&nbsp;<input type="checkbox" name="checkbox" id="w2"> <label for="w2">服务 </label>&nbsp; <input type="checkbox" name="checkbox" id="w3"> <label for="w3">安全性检查 </label> &nbsp;<input type="checkbox" name="checkbox" id="w4"> <label for="w4">精品服务 </label></p>
+			</div>
+			<div class="m_t5">
+				<p>Q12:请问您购车之后最担心的问题是什么？</p>
+				<div contenteditable="true" class="content_table"></div>
+			</div>
+			<p class="m_t5">先生/女士：我的调查到此就结束了，非常感谢您能抽出时间回答我的问题，祝您用车愉快！</p>
+		</div>
+		<script>
+			function aa(){
+				
+			}
+		</script>
+	</body>
+</html>

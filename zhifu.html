@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>支付页面</title>
+		<style>
+			html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline;}
+			body{font-size:14px;font-family: "微软雅黑" arial;color: #333;}
+			html,body{height:100%;background: #fff;}
+			.zf_but{width: 90%;height: 40px; border:1px solid #a1a1a1;border-radius: 4px;margin-left: 5%;box-sizing: border-box;background: #51c2fc;color: #fff;}
+			.f_16{font-size: 16px;}
+			.zf{padding: 15px;box-sizing: border-box;}
+			.zf p{height: 30px;line-height: 30px;}
+			.rad{width:20px;height:20px;vertical-align: middle;margin-top: -2px;}
+			.m_t20{margin-top: 20px;}
+		</style>
+	</head>
+	<body>
+		<div class="zf">
+			<p class="m_t20 f_16">培训费用（共42小时课时）</p>
+			<p><input type="radio" name="rad" class="rad" id="rad1" value="168" checked="checked"><label for="rad1">培训费168元（网络授课,含书本费28元）</label></p>
+			<p><input type="radio" name="rad" class="rad" id="rad2" value="210"  checked="checked"><label for="rad2">培训费210元（现场授课,含书本费28元）</label></p>
+			<button class="zf_but m_t20" onclick="aa()">点击支付培训费用</button>
+			<p class="m_t20 f_16">考核费用：118元</p>
+			<button class="zf_but m_t20">点击支付考核费用</button>
+		</div>
+		<script>
+			var rad=document.getElementsByClassName("rad")
+			function aa(){
+				for(var i=0;i<rad.length;i++){
+					if(rad[i].checked){
+					alert(rad[i].value)
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
